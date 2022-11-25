@@ -10,7 +10,7 @@ Learn more about [Inferno](https://www.infernojs.org/).
 3. Start coding
 
 ## inferno-parcel-template
-Use this for a simple projects.
+Use this for simple projects.
 
 ```sh
 git clone git@github.com:jhsware/inferno-parcel-templates.git
@@ -21,7 +21,7 @@ npm i && npm run dev
 ```
 
 ## inferno-parcel-monorepos-template
-Template for a monorepo project. Use this if you want to create component libraries or larger projects.
+Template for monorepo projects. Use this if you want to create component libraries or larger projects.
 
 ```sh
 git clone git@github.com:jhsware/inferno-parcel-templates.git
