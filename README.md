@@ -10,7 +10,7 @@ Learn more about [Inferno](https://www.infernojs.org/).
 3. Start coding
 
 ## inferno-parcel-template
-Template for a simple project. Use this for a simple projects.
+Use this for a simple projects.
 
 ```sh
 git clone git@github.com:jhsware/inferno-parcel-templates.git
