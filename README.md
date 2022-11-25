@@ -7,7 +7,7 @@ Learn more about [Inferno](https://www.infernojs.org/).
 
 2. Set up your project
 
-3. Edit your package.json files
+3. Start coding
 
 ## inferno-parcel-template
 Template for a simple project. Use this for a simple projects.
