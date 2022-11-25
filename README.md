@@ -33,6 +33,6 @@ npm i && npm run dev
 
 ## Template Features
 
-Inferno: [Inferno](https://www.infernojs.org/)
-Bundler: [Parcel](https://parceljs.org/)
-Testing: [Jest](https://jestjs.io/)
+- Inferno: [Inferno](https://www.infernojs.org/)
+- Bundler: [Parcel](https://parceljs.org/)
+- Testing: [Jest](https://jestjs.io/)
