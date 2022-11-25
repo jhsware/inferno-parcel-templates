@@ -1,0 +1,23 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test:type-check": "tsc --noEmit --skipLibCheck",
+    "test:jest": "jest"
+  },
+  "author": "Sebastian Ware",
+  "license": "MIT",
+  "dependencies": {
+    "inferno": "^8.0.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-babel": "2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "babel-plugin-inferno": "^6.5.0",
+    "ts-jest": "^29.0.1",
+    "typescript": "^4.9.3"
+  }
+}

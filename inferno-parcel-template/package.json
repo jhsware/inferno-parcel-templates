@@ -1,0 +1,36 @@
+{
+  "name": "inferno-parcel-template",
+  "version": "1.0.0",
+  "description": "Inferno Parcel Template",
+  "private": true,
+  "scripts": {
+    "dev": "parcel",
+    "test": "npm run test:type-check",
+    "clean": "npm run clean:parcel",
+    "serve": "npm run build && serve ./distServe",
+    "clean:parcel": "rm -rf .parcel-cache dist",
+    "test:type-check": "tsc --noEmit --skipLibCheck",
+    "test:jest": "jest"
+  },
+  "author": "Sebastian Ware",
+  "license": "MIT",
+  "dependencies": {
+    "inferno": "^8.0.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-babel": "2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "babel-plugin-inferno": "^6.5.0",
+    "jest-environment-jsdom": "^29.1.2",
+    "parcel": "^2.8.0",
+    "serve": "^14.1.2",
+    "ts-jest": "^29.0.1",
+    "typescript": "^4.9.3"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "default": {
+      "source": "src/index.html"
+    }
+  }
+}

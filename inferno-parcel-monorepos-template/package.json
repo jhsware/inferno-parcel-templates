@@ -1,0 +1,34 @@
+{
+  "name": "inferno-parcel-monorepo-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Inferno Parcel Monorepo Template",
+  "scripts": {
+    "dev": "parcel",
+    "test": "npm run test:type-check --workspaces --include-workspace-root --if-exists && npm run test:jest --workspaces --include-workspace-root --if-exists",
+    "clean": "npm run clean:parcel",
+    "serve": "npm run build && serve ./distServe",
+    "clean:parcel": "rm -rf .parcel-cache dist",
+    "test:type-check": "tsc --noEmit --skipLibCheck",
+    "test:jest": "jest"
+  },
+  "author": "Sebastian Ware",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-babel": "2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.8.0",
+    "serve": "^14.1.2",
+    "ts-jest": "^29.0.1",
+    "typescript": "^4.9.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "default": {
+      "source": "packages/frontend/src/index.html"
+    }
+  }
+}

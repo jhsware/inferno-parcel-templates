@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "module": "es2020",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "es2020"
+    ],
+    "types": [
+      "inferno",
+      "jest"
+    ],
+  }
+}
