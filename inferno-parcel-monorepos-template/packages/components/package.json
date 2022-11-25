@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "main": "src/index.ts",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "engines": {
+    "node": ">= 12"
+  },
   "scripts": {
     "test:type-check": "tsc --noEmit --skipLibCheck",
-    "test:jest": "jest"
+    "test:jest": "jest",
+    "test:updateSnapshot": "jest --updateSnapshot"
   },
   "author": "Sebastian Ware",
   "license": "MIT",
@@ -14,10 +21,11 @@
     "inferno": "^8.0.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "@parcel/transformer-babel": "2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "babel-plugin-inferno": "^6.5.0",
-    "ts-jest": "^29.0.1",
+    "jest-environment-jsdom": "^29.1.2",
     "typescript": "^4.9.3"
   }
 }

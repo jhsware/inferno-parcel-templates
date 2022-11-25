@@ -8,7 +8,7 @@ type TApp = {
   title: string,
   children: any
 }
-function App({ title, children }: TApp) {
+export function App({ title, children }: TApp) {
   return (
     <article>
       <h1>{title}</h1>

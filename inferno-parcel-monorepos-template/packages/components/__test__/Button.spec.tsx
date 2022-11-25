@@ -1,7 +1,7 @@
 import { render } from 'inferno';
 import { describe, expect, it, beforeEach } from "@jest/globals";
 
-import { Button } from "../src/components/Button";
+import { Button } from "../src/Button";
 
 describe('Button', () => {
   let node;

@@ -5,18 +5,22 @@
   "description": "Inferno Parcel Monorepo Template",
   "scripts": {
     "dev": "parcel",
-    "test": "npm run test:type-check --workspaces --include-workspace-root --if-exists && npm run test:jest --workspaces --include-workspace-root --if-exists",
+    "build": "parcel build --dist-dir distProd",
+    "build:libs": "npm run build --workspaces --if-present",
+    "test": "npm run test:type-check --workspaces --include-workspace-root --if-present && npm run test:jest --workspaces --include-workspace-root --if-present",
     "clean": "npm run clean:parcel",
-    "serve": "npm run build && serve ./distServe",
+    "serve": "npm run build && serve ./distProd",
     "clean:parcel": "rm -rf .parcel-cache dist",
     "test:type-check": "tsc --noEmit --skipLibCheck",
-    "test:jest": "jest"
+    "test:jest": "NODE_ENV=test npm run test:jest --workspaces --if-present"
   },
   "author": "Sebastian Ware",
   "license": "MIT",
   "devDependencies": {
+    "@parcel/packager-ts": "^2.8.0",
     "@parcel/transformer-babel": "2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
+    "@parcel/transformer-typescript-types": "^2.8.0",
     "parcel": "^2.8.0",
     "serve": "^14.1.2",
     "ts-jest": "^29.0.1",

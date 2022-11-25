@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button can be rendered 1`] = `
+<div>
+  <article>
+    <h1>
+      Test
+    </h1>
+    test
+  </article>
+</div>
+`;

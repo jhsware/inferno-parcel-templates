@@ -8,7 +8,7 @@ type TApp = {
   title: string,
   children: any
 }
-function App({ title, children }: TApp) {
+export function App({ title, children }: TApp) {
   return (
     <article>
       <h1>{title}</h1>
@@ -20,7 +20,7 @@ function App({ title, children }: TApp) {
 export function appFactory () {
 
   return (
-      <App title="Inferno Monorepo Template">
+      <App title="Inferno Template">
         <Button onClick={(e) => alert("This works!")}>Click me!</Button>
       </App>
   )

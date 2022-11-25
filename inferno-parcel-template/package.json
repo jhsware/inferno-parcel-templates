@@ -5,12 +5,14 @@
   "private": true,
   "scripts": {
     "dev": "parcel",
+    "build": "parcel build --dist-dir distProd",
     "test": "npm run test:type-check",
     "clean": "npm run clean:parcel",
-    "serve": "npm run build && serve ./distServe",
+    "serve": "npm run build && serve ./distProd",
     "clean:parcel": "rm -rf .parcel-cache dist",
     "test:type-check": "tsc --noEmit --skipLibCheck",
-    "test:jest": "jest"
+    "test:jest": "jest",
+    "test:updateSnapshot": "jest --updateSnapshot"
   },
   "author": "Sebastian Ware",
   "license": "MIT",
@@ -18,6 +20,7 @@
     "inferno": "^8.0.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "@parcel/transformer-babel": "2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "babel-plugin-inferno": "^6.5.0",

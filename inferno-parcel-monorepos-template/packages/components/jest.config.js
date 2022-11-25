@@ -5,7 +5,7 @@ module.exports = {
   moduleNameMapper: {
     // This handles non-ts imports in tests by ignoring them
     "\\.(scss|css|jpg|png|gif|svg|webp|webm|mp4|mov)$":
-      "<rootDir>/__mocks__/ignore.mock.ts",
+    "<rootDir>/../../__mocks__/ignore.mock.ts",
   },
   transform: {
     "^.+\\.tsx?$": [

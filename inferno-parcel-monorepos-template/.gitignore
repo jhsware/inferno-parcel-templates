@@ -1,0 +1,18 @@
+# Node specific
+node_modules
+.env
+
+# Parcel specific
+.parcel-cache
+dist
+distProd
+
+# OS specific
+.DS_Store
+.DS_Store?
+Icon?
+Thumbs.db
+thumbs.db
+
+# Editor specific
+.vscode

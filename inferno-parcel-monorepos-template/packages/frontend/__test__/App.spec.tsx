@@ -1,16 +1,16 @@
 import { render } from 'inferno';
 import { describe, expect, it, beforeEach } from "@jest/globals";
 
-import { Button } from "../src/components/Button";
+import { App } from "../src/App";
 
-describe('Button', () => {
+describe('App', () => {
   let node;
   beforeEach(() => {
     node = document.createElement('div');
   })
 
   it('can be rendered', () => {
-    render(<Button>Click</Button>, node);
+    render(<App title="Test">test</App>, node);
     expect(node).toMatchSnapshot();
   });
 });

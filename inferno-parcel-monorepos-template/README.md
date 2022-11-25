@@ -1,5 +1,5 @@
 # Inferno Monorepo Template for ParcelJS
-Setting up your Inferno-project with the ParcelJS is trivial. The trick is to add a `babel.config.json` file in your project root which tells BabelJS to pick up local `.babelrc` files from your workspaces.
+Setting up your Inferno monorepo-project with the ParcelJS is trivial. The trick is to add a `babel.config.json` file in your project root which tells BabelJS to pick up local `.babelrc` files from your workspaces.
 
 ## Getting started
 ```sh
