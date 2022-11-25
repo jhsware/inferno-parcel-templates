@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "parcel",
     "build": "parcel build --dist-dir distProd",
-    "build:libs": "npm run build --workspaces --if-present",
-    "test": "npm run test:type-check --workspaces --include-workspace-root --if-present && npm run test:jest --workspaces --include-workspace-root --if-present",
+    "build:libs": "npm run build:libs --workspaces --if-present",
+    "test": "npm run build:libs && npm run test:type-check && npm run test:jest",
     "clean": "npm run clean:parcel",
     "serve": "npm run build && serve ./distProd",
     "clean:parcel": "rm -rf .parcel-cache dist",
-    "test:type-check": "tsc --noEmit --skipLibCheck",
+    "test:type-check": "npm run test:type-check --workspaces --if-present",
     "test:jest": "NODE_ENV=test npm run test:jest --workspaces --if-present"
   },
   "author": "Sebastian Ware",

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel",
     "build": "parcel build --dist-dir distProd",
-    "test": "npm run test:type-check",
+    "test": "npm run test:type-check && npm run test:jest",
     "clean": "npm run clean:parcel",
     "serve": "npm run build && serve ./distProd",
     "clean:parcel": "rm -rf .parcel-cache dist",

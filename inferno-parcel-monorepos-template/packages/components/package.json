@@ -11,6 +11,7 @@
     "node": ">= 12"
   },
   "scripts": {
+    "build:libs": "parcel build",
     "test:type-check": "tsc --noEmit --skipLibCheck",
     "test:jest": "jest",
     "test:updateSnapshot": "jest --updateSnapshot"
